@@ -3,3 +3,5 @@ pandas
 requests
 scikit-learn
 streamlit
+spotipy
+sqlite
