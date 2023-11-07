@@ -3,6 +3,9 @@ pandas
 requests
 scikit-learn
 streamlit
-spotipy
+
 sqlite-database
 python-dotenv
+selenium
+beautifulsoup4
+webdriver-managerpipi
