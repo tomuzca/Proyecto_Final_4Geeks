@@ -8,4 +8,4 @@ sqlite-database
 python-dotenv
 selenium
 beautifulsoup4
-webdriver-managerpipi
+webdriver-manager
