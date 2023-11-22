@@ -1,15 +1,26 @@
-from pickle import load
 import streamlit as st
 import numpy as np
 import pandas as pd
+import requests
+from io import BytesIO
 import pickle
+from pickle import load
 from datetime import datetime
+import gdown  # Agrega la importación de la biblioteca gdown
 
-# Load the model
-model = load(open("../models/random_forest_regressor_default_42.pkl", 'rb'))
+# ID del archivo en Google Drive
+file_id = '1Iz-IR0WETEt1y1LCnCwUDN5bpIIB1EuU'
+destination = 'random_forest_regressor_default_42.pkl'
+
+# Descargar el modelo desde Google Drive
+gdown.download(f'https://drive.google.com/uc?id={file_id}', destination, quiet=False)
+
+# Cargar el modelo desde el archivo descargado
+with open(destination, 'rb') as file:
+    model = pickle.load(file)
 
 # Load DataFrame with distances
-distances_df = pd.read_pickle('millas')  # Reemplaza 'tu_dataframe_con_distancias.csv' con el nombre de tu archivo CSV
+distances_df = pd.read_pickle('millas') 
 distances_df['Distance (miles)'] = distances_df['Distance (miles)'].astype(float)# Reemplaza 'tu_dataframe_con_distancias.csv' con el nombre de tu archivo CSV
 
 # List of destinations
