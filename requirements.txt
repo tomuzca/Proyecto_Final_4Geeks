@@ -3,10 +3,13 @@ pandas
 requests
 scikit-learn
 streamlit
-
-sqlite-database
+datetime
+sqlite3
 python-dotenv
 selenium
 beautifulsoup4
 webdriver-manager
 chromedriver-py
+lxml
+pickle
+seaborn
