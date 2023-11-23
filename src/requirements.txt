@@ -1,0 +1,16 @@
+numpy
+pandas
+requests
+scikit-learn
+streamlit
+datetime
+sqlite3
+python-dotenv
+selenium
+beautifulsoup4
+webdriver-manager
+chromedriver-py
+lxml
+pickle
+seaborn
+gdown
