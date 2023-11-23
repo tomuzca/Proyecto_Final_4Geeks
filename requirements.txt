@@ -13,3 +13,4 @@ chromedriver-py
 lxml
 pickle
 seaborn
+gdown
